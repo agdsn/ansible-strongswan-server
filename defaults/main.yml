@@ -1,8 +1,11 @@
-strongswan_ikelifetime: 3h
-strongswan_keylife: 60m
-strongswan_margintime: 15m
-strongswan_rekeyfuzz: 100%
+strongswan_ikelifetime: 60m
+strongswan_keylife: 20m
+strongswan_rekeymargin: 3m
 strongswan_keyingtries: 1
-strongswan_keyexchange: ike
-strongswan_authby: secret
-
+strongswan_keyexchange: ikev2
+strongswan_mobike: no
+strongswan_ctrlcheckinterval: 180
+strongswan_strictcrlpolicy: "no"
+strongswan_plutostart: no
+strongswan_charon_plugins: "curl aes des sha1 sha2 md5 pem pkcs1 gmp random x509 revocation hmac xcbc stroke kernel-netlink socket-default updown"
+strongswan_charon_multiple_authentication: "no"

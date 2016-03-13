@@ -1,4 +1,6 @@
 config setup
+       ctrlcheckinterval={{ strongswan_ctrlcheckinterval }}
+       strictcrlpolicy={{ strongswan_strictcrlpolicy }}
+       plutostart={{ strongswan_plutostart }}
 
 include /etc/ipsec.conf.d/*.conf
-
