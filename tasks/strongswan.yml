@@ -1,9 +1,10 @@
 - name: Installs strongswan & ikev2 daemon
-  apt: name={{ item }} state=present
-  with_items:
-    - strongswan
-    - strongswan-ike
-    - strongswan-ikev2
+  apt:
+    name:
+      - strongswan
+      - strongswan-ike
+      - strongswan-ikev2
+    state: present
   tags: apt
 
 - name: Creates config and secrets fragments directory
